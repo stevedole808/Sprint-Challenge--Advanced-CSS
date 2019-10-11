@@ -1,7 +1,7 @@
 // Mixins Here
 
 
-.button ( @width: 120px, @txt-color: white) {
+.btn ( @width: 120px, @txt-color: white) {
     display: block;
     background-color: @ebony-clay;
     font-size: 2rem;
@@ -10,6 +10,9 @@
     width: @width;
     color: @txt-color;
     cursor: pointer;
+    @media @phone{
+        width: 100%;
+    }
 
 &:hover {
         background-color: @wild-sand;
@@ -22,4 +25,10 @@
     text-decoration: none;
     color: black;
     padding: 16px;
+}
+
+.mixin() {
+    @media @phone {
+        display: none;
+    }
 }
