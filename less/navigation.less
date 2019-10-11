@@ -1,1 +1,37 @@
 // Navigation code here
+.navbar(){
+    font-size: 2rem;
+    color: @nav-font;
+    text-decoration: none;
+    padding-bottom: 15px;
+    
+}
+
+.topcont {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background: @nav-bg;
+    width: 50%;
+    margin: 0 auto;
+    padding-bottom: 12px;
+    border-radius: 10px;
+    @media @phone {
+        width: 100%;
+        background: rgba(246, 246, 246, 0.781);
+    }
+
+
+    h1{
+        font-size: 4rem;
+        padding: 2%;
+    }
+}
+
+a {
+    .navbar();
+}
+
+
+    
+
